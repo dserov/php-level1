@@ -59,23 +59,50 @@ h3 a {
 }
 
 #menu {
+    list-style: none;
     float: right;
     margin: 10px 10px 0 0;
-}
-
-#menu li {
-    display: inline;
-    list-style: none;
+    display: flex;
 }
 
 #menu li a {
-    float: left;
-    margin: 0 0 0 20px;
     color: #888;
+    display: inline-block;
 }
 
-#menu li a:hover {
+.menu-top > li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-drop-down > li:hover {
+    background-color: #ccc;
     color: #555;
+}
+
+.menu-drop-down a:hover {
+    background-color: #ccc;
+    color: #555;
+}
+
+.menu-drop-down > li > a {
+    padding: 5px 20px;
+}
+
+.menu-drop-down {
+    display: none;
+    list-style: none;
+    position: absolute;
+    border: 1px solid #888;
+    background-color: #fff;
+}
+
+.menu-drop-down:hover {
+    display: block;
+}
+
+li:hover > .menu-drop-down {
+    display: block;
 }
 
 .post {
