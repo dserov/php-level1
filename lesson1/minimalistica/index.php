@@ -9,11 +9,11 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Luka Cvrk (www.solucija.com)" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
-    <title><?php echo $title ?></title>
+    <title><?= $title ?></title>
 </head>
 <body>
 	<div id="content">
-        <h1><?php echo $h1 ?></h1>
+        <h1><?= $h1 ?></h1>
 		
 		<ul id="menu">
 			<li><a href="#">home</a></li>
@@ -50,7 +50,7 @@
 		</div>
 		
 		<div id="footer">
-            <?php echo $currYear ?>
+            <?= $currYear ?>
 			<p>Copyright &copy; <em>minimalistica</em> &middot; Design: Luka Cvrk, <a href="http://www.solucija.com/" title="Free CSS Templates">Solucija</a></p>
 		</div>	
 	</div>
